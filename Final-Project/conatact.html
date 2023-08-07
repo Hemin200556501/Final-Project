@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tag -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Page</title>
+    <meta name="description" content="This is html lab four">
+    <meta name="robots" content="noindex,nofollow">
+    <link rel="stylesheet" href="./css/st.css" />
+    <!-- <script src="./java/fp.js" defer></script> -->
+    <script src="./java/header.js"></script>
+  </head>
+  <body>
+    <div id="header"></div>
+    <div class="container">
+      <div style="text-align:center">
+        <!-- A title for the Page -->
+        <h2>Contact Us</h2>
+      </div>
+      <div class="row">
+        <div class="column">
+          <!-- an image of NES -->
+          <img src="./img/systemwithdisplay.jpg"  alt="image" style="width:100%">
+        </div>
+        <div class="column">
+          <!-- HTML Form Starts -->
+          <form>
+            <!-- User First name -->
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" maxlength="15"placeholder="Your name.." required>
+            <!-- User Last name -->
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" maxlength="15" placeholder="Your last name.." required>
+            <!-- User Phone number -->
+            <label for="phone">Phone no.</label>
+            <input type="text" id="phone" name="Phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" maxlength="10" placeholder="Your Phone No..." required>
+            <!-- User E-mail  -->
+            <label for="email">E-Mail</label>
+            <input type="email" id="email" name="email" maxlength="50" placeholder="Your E-Mail.." required>
+            <!-- User Country -->
+            <label for="country">Country</label>
+            <select id="country" name="country">
+              <option value="australia">Australia</option>
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+              <option value="usa">India</option>
+              <option value="usa">Pakistan</option>
+              <option value="usa">Dubai</option>
+              <option value="usa">London</option>
+            </select>
+            <!-- User Message -->
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px" required></textarea>
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+  </html>

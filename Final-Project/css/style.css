@@ -1,0 +1,190 @@
+/* Index page CSS */
+
+/* Import Google Fonts for typography */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+/* Reset default styles for consistent layout */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Highlight text selection with contrasting colors */
+::selection {
+  color: #000;
+  background: #fff;
+}
+
+/* Header section styling */
+header {
+  margin: -8px;
+  padding: 0px;
+}
+
+/* Buttons container */
+.btns {
+  margin-top: 30px;
+}
+
+/* Button styling */
+.buttons {
+  color: #000;
+  text-decoration: none;
+  background: #fff;
+  padding: 9px 25px;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: 0.5s;
+}
+
+/* Button hover effect */
+.btns > .buttons:hover {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+/* Navigation bar */
+nav {
+  position: fixed;
+  background: #1b1b1b00; /* Transparent background */
+  width: 100%;
+  padding: 10px 0;
+  z-index: 12;
+}
+
+/* Navigation menu container */
+nav > .menu {
+  max-width: 1250px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+/* Logo styling */
+.menu > .logo > a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
+
+/* Menu items list */
+.menu  > ul {
+  display: inline-flex;
+}
+
+/* Individual menu item */
+.menu > ul > li {
+  list-style: none;
+  margin-left: 7px;
+}
+
+/* Adjust margin for the first menu item */
+.menu > ul > li:first-child {
+  margin-left: 0px;
+}
+
+/* Menu item link styling */
+.menu > ul > li > a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+/* Menu item link hover effect */
+.menu > ul > li > a:hover {
+  background: #fff;
+  color: black;
+}
+
+/* Background image section */
+.img {
+  background: url('../img/snapedit_1691342934262.jpg') no-repeat;
+  width: auto;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+/* Background overlay */
+.img::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/* Centered content section */
+.center {
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 0 20px;
+  text-align: center;
+}
+
+/* Title styling */
+.center > .title {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+/* Subtitle styling */
+.center > .sub_title {
+  color: #fff;
+  font-size: larger;
+  font-weight: 600;
+}
+
+/* Buttons section within the center */
+.center > .btns {
+  margin-top: 20px;
+}
+
+/* Button styling within the center section */
+.center > .btns > button {
+  height: 55px;
+  width: 170px;
+  border-radius: 5px;
+  border: none;
+  margin: 0 10px;
+  border: 2px solid white;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0 10px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+/* First button styling */
+.center > .btns > button:first-child {
+  color: #fff;
+  background: none;
+}
+
+/* Hover effect for the first button */
+.btns > button:first-child:hover {
+  background: white;
+  color: black;
+}
+
+/* Second button styling */
+.center > .btns > button:last-child {
+  background: white;
+  color: black;
+}
